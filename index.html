@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sports Center</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Reset default styles */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
+      /* Set a default font size and line height */
+      html {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      /* Set styles for the header */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      /* Set styles for the navigation links */
+      nav {
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+      }
+
+      nav a {
+        color: #333;
+        margin: 0 0.5rem;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #000;
+      }
+
+      /* Set styles for the section headings */
+      h2 {
+        font-size: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      /* Set styles for the card grid */
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1rem;
+        margin: 2rem 0;
+      }
+
+      .card {
+        border: 1px solid #ccc;
+        overflow: hidden;
+      }
+
+      .card img {
+        display: block;
+        width: 100%;
+      }
+
+      .card-body {
+        padding: 1rem;
+      }
+
+      .card-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      /* Set styles for the contact form */
+      form {
+        margin: 2rem 0;
+        text-align: center;
+      }
+
+      input,
+      textarea {
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        margin: 1rem;
+        padding: 0.5rem;
+        width: 100%;
+      }
+
+      button {
+        background-color: #333;
+        border: none;
+        border-radius: 0.5rem;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1rem;
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #000;
+      }
+
+      /* Set media query for smaller screens */
+      @media screen and (max-width: 768px) {
+        .card-grid {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Sports Center</h1>
+    </header>
+    <nav>
+        <ul>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section id="facilities">
+      <h2>Facilities</h2>
+      <p>Our sports center offers a wide variety of facilities for different types of sports:</p>
+      <ul>
+        <li>Swimming pool</li>
+        <li>Gymnasium with cardio and weightlifting equipment</li>
+        <li>Indoor basketball court</li>
+        <li>Tennis courts</li>
+        <li>Soccer field</li>
+        <li>Volleyball court</li>
+      </ul>
+    </section>
+    <section id="schedule">
+      <h2>Schedule</h2>
+      <p>We are open every day from 6am to 10pm. You can find our class schedule on our website or by asking at the front desk.</p>
+    </section>
+    <section id="membership">
+      <h2>Membership</h2>
+      <p>We offer various membership options to fit your needs:</p>
+      <ul>
+        <li>Monthly membership: $50 per month</li>
+        <li>Annual membership: $500 per year</li>
+        <li>Family membership: $75 per month or $750 per year</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>You can reach us by phone, email, or in person:</p>
+      <ul>
+        <li>Phone: 555-1234</li>
+        <li>Email: info@sportscenter.com</li>
+        <li>Address: 123 Main St, Anytown USA</li>
+      </ul>
+    </section>
+    <footer>
+      <p>&copy; 2023 Sports Center. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
