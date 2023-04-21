@@ -28,8 +28,58 @@ html, body {
     background-color: white;
     width: 100%;
     height: auto;
+    position: fixed;
   }
   
   .img-titolo {
     height: 70px;
   }
+
+/* Dropdown bottone */
+.dropbtn {
+  color: black;
+  padding: 16px;
+  font-size: 14px;
+  border: none;
+  background-color: #e6e6e6;
+}
+
+/* per dare la posizione al contenuto del dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  top: 10px;
+}
+
+/*il contenuto del dropdown è nascosco di default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8ac0f0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* link dentro il dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* cambio colore ai dropdown link con hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* mostra il dropdown menu con hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* cambia il background color del bottone dropdown quando il contenuto del dropdown viene mostrato */
+.dropdown:hover .dropbtn {background-color: #9b9bf8;}
+
+.link-rowing {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
