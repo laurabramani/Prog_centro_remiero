@@ -1,39 +1,41 @@
 html, body {
-    height: 100%;
-    width: 100%;
-  }
-  
-  body {
-    margin: 0%
-  }
-  
-  .bg {
-    /* scelta immagine bg */
-    background-image: url("foto/foto-homepage.jpg");
-  
-    /* altezza deve essere 100% */
-    height: 100%;
-  
-    /* per regolare la foto */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .div-titolo {
-    padding-left: 20px;
-  }
-  
-  .div-nav {
-    background-color: white;
-    width: 100%;
-    height: auto;
-    position: fixed;
-  }
-  
-  .img-titolo {
-    height: 70px;
-  }
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0%
+}
+
+.bg {
+  /* scelta immagine bg */
+  background-image: url("foto/foto-homepage.jpg");
+
+  /* altezza deve essere 100% */
+  height: 100%;
+
+  /* per regolare la foto */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.div-titolo {
+  padding-left: 20px;
+  float: left;
+  padding-right: 20px;
+}
+
+.div-nav {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 80px;
+}
+
+.img-titolo {
+  height: 70px;
+}
 
 /* Dropdown bottone */
 .dropbtn {
@@ -44,14 +46,14 @@ html, body {
   background-color: #e6e6e6;
 }
 
-/* per dare la posizione al contenuto del dropdown */
+/* posizone del contenuto del menu */
 .dropdown {
   position: relative;
   display: inline-block;
   top: 10px;
 }
 
-/*il contenuto del dropdown è nascosco di default */
+/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -61,7 +63,7 @@ html, body {
   z-index: 1;
 }
 
-/* link dentro il dropdown */
+/* Links dentro il dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -69,13 +71,13 @@ html, body {
   display: block;
 }
 
-/* cambio colore ai dropdown link con hover */
+/* cambio colore del dropdown links con hover */
 .dropdown-content a:hover {background-color: #ddd;}
 
 /* mostra il dropdown menu con hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-/* cambia il background color del bottone dropdown quando il contenuto del dropdown viene mostrato */
+/* cambia il colore di sfondo del bottone quando il contenuto del dropdown viene mostrato */
 .dropdown:hover .dropbtn {background-color: #9b9bf8;}
 
 .link-rowing {
