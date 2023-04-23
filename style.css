@@ -5,6 +5,9 @@ html, body {
 
 body {
   margin: 0%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #4b3bc4;
+  overflow-x: hidden;
 }
 
 .bg {
@@ -95,4 +98,149 @@ body {
   color: #4b3bc4;;
   text-decoration: none;
   display: block;
+}
+
+.div-cit {
+  display: grid;
+  width: 50%;
+  margin: auto;
+}
+
+.div-cit-testo {
+  grid-column: 1;
+  background-color: #ddd;
+  display: flex;
+  row-gap: 0;
+  padding-left: 10px;
+}
+
+.div-cit-nome {
+  grid-column: 1;
+  background-color: #ddd;
+  display: flex;
+  row-gap: 0;
+}
+
+.div-cit-img {
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  display: flex;
+  row-gap: 0;
+}
+
+.p-cit {
+  width: 100%;
+  text-align: right;
+  padding-right: 10px;
+}
+
+@keyframes mov {
+  0%   {left:0px; top:0px;}
+  50%  {left:100%; top:0px;}
+  100% {left:0px; top:0px;}
+}
+
+@keyframes colore {
+  0%   {background-color: white; width:0px;}
+  50%  {background-color: #8ac0f0; width:100%;}
+  100% {background-color: white; width:0px;}
+}
+
+.img-barca {
+  position: relative;
+  width: 150px;
+  animation-name: mov;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.div-anim {
+  width: 86%;
+  margin-top: 20px;
+}
+
+.div-col {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  position: relative;
+  animation-name: colore;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.div-footer {
+  background-color: #ddd;
+  height: 22%;
+  width:100%;
+  float: left;
+  align-content: center;
+  justify-content: center;
+}
+
+.df {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  display: flex;
+}
+
+.div-f-img {
+  float: left;
+  height: 100%;
+  display: flex;
+}
+
+.div-f-p {
+  float: left;
+  margin: 0px;
+  left: 10px;
+  position: relative;
+  display: flex;
+}
+
+.p-footer {
+  margin: 0px;
+  left: 10px;
+  position: relative;
+}
+
+.grid-footer {
+  display: grid;
+  position: relative;
+  left: 40px;
+  grid-template-columns: 100px;
+  float: left;
+}
+
+.grid-p {
+  display: flex;
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  text-align: center;
+}
+
+.grid-fb {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.grid-ig {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.div-lago {
+  float: left;
+  position: relative;
+  left: 60px;
+  display: flex;
+}
+
+.div-brivio {
+  display: flex;
+  position: relative;
+  left: 80px;
 }
